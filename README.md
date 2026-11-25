@@ -1,6 +1,6 @@
 # Driving FFmpeg from Java
 
-Example code for the foojay.io article "Driving FFmpeg from Java Without Deadlocks or Broken Files": running `ffmpeg` and `ffprobe` from `ProcessBuilder` on JDK 21+ without the stderr pipe deadlock, parsing ffprobe JSON into records, reading live progress, cancelling cleanly and running encodes in parallel.
+Example code for the foojay.io article ["Driving FFmpeg from Java Without Deadlocks or Broken Files"](https://foojay.io/today/driving-ffmpeg-from-java/): running `ffmpeg` and `ffprobe` from `ProcessBuilder` on JDK 21+ without the stderr pipe deadlock, parsing ffprobe JSON into records, reading live progress, cancelling cleanly and running encodes in parallel.
 
 Each example is a single source file. Most run with `java Name.java`; the two that parse JSON (`Probe.java`, `Loudnorm.java`) declare a Jackson dependency in a `//DEPS` comment and run with [JBang](https://www.jbang.dev/).
 
